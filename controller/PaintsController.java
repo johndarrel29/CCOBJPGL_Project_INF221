@@ -45,15 +45,16 @@ public class PaintsController implements Initializable {
 
       FXMLLoader loader;
 
-    public void initialize (){
-        ImageView imageView = new ImageView(getClass().getResource("/images/brush.png").toExternalForm());
-        logo.setGraphic(imageView);
-        imageView.fitWidthProperty().bind(logo.widthProperty().divide(2));
-        imageView.setPreserveRatio(true);
-        //Important otherwise button will wrap to text + graphic size (no resizing on scaling).
-        logo.setMaxWidth(Double.MAX_VALUE);   
-        logo.setPadding(Insets.EMPTY);
-    }
+    //for the home button lng to
+//     public void initialize (){
+//         ImageView imageView = new ImageView(getClass().getResource("/images/brush.png").toExternalForm());
+//         logo.setGraphic(imageView);
+//         imageView.fitWidthProperty().bind(logo.widthProperty().divide(2));
+//         imageView.setPreserveRatio(true);
+//         //Important otherwise button will wrap to text + graphic size (no resizing on scaling).
+//         logo.setMaxWidth(Double.MAX_VALUE);   
+//         logo.setPadding(Insets.EMPTY);
+//     }
 
      static Watercolor watercolor = new Watercolor();
     static Gouache gouache = new Gouache();
