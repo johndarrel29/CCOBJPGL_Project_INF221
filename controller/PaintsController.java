@@ -29,7 +29,7 @@ public class PaintsController implements Initializable {
     Button logo, button1, button2, button3, cartbutton;;
 
      @FXML
-    Label name1, name2, name3, name4, price1, price2, price3;
+    Label name1, name2, name3, price1, price2, price3;
 
       @FXML
     ImageView img1, img2, img3;
