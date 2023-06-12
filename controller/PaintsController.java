@@ -107,17 +107,17 @@ public class PaintsController implements Initializable {
         // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(button1)) {
             watercolor.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane1);
+            //checkoutController.addItem(checkoutController.pane1);
         }
 
         else if (sourceButton == button2) {
             gouache.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane2);
+            //checkoutController.addItem(checkoutController.pane2);
         }
 
         else if (sourceButton == button3) {
             postercolor.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane3);
+            //checkoutController.addItem(checkoutController.pane3);
         }
     }
 
