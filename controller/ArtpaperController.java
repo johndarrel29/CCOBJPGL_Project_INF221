@@ -21,7 +21,7 @@ import javafx.fxml.Initializable;
 
 public class ArtpaperController implements Initializable{
 
-@FXML
+    @FXML
     Button button4, button5, button6, cartbutton;;
 
     @FXML
