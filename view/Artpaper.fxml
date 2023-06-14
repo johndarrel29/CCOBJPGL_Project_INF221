@@ -88,5 +88,10 @@
             </Button>
          </children>
       </Pane>
+      <Button fx:id="cartbutton" layoutX="728.0" layoutY="42.0" mnemonicParsing="false" onAction="#gotocart" style="-fx-background-color: red;" text="My Cart" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
