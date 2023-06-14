@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../images/HomePage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cart" layoutX="1113.0" layoutY="14.0" mnemonicParsing="false" onAction="#cart" prefHeight="38.0" prefWidth="65.0" style="-fx-background-color: #000000;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="65.0">
+               <image>
+                  <Image url="@../images/AddToCart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="logo" layoutX="24.0" layoutY="4.0" mnemonicParsing="false" onAction="#logo" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #000000;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="110.0">
+               <image>
+                  <Image url="@../images/Logo1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="account" layoutX="967.0" layoutY="14.0" mnemonicParsing="false" onAction="#account" style="-fx-background-color: #000000;" text="Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="products" layoutX="217.0" layoutY="15.0" mnemonicParsing="false" onAction="#product" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: black;" text="Products" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
