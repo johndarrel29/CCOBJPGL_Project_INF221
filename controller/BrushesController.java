@@ -15,11 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.StackPane;
-import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.fxml.Initializable;
 
@@ -28,13 +24,13 @@ public class BrushesController implements Initializable{
     @FXML
     Button button7, button8, button9, cartbutton;;
 
-     @FXML
+    @FXML
     Label name7, name8, name9, price7, price8, price9;
 
-      @FXML
+    @FXML
     ImageView img7, img8, img9;
 
-      @FXML
+    @FXML
     private Stage stage;
 
     @FXML
@@ -43,7 +39,10 @@ public class BrushesController implements Initializable{
     @FXML
     private Parent root = null;
 
-      FXMLLoader loader;
+    FXMLLoader loader;
+    
+    @FXML
+    CheckoutController checkoutController = null;
     
     static AngularflatBrush angularflatbrush = new AngularflatBrush();
     static FlatBrush flatbrush = new FlatBrush();
@@ -85,6 +84,18 @@ public class BrushesController implements Initializable{
         roundbrush.setProductImage("images/roundbrushpic.jpg");
         Image roundbrushpic = new Image(roundbrush.getProductImage());
         img9.setImage(roundbrushpic);
+
+        try {
+            loader = new FXMLLoader(getClass().getResource("/view/Checkout.fxml"));
+            root = loader.load();
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+        // Clears all items in Checkout.fxml
+        checkoutController = loader.getController();
+        checkoutController.myvbox.getChildren().removeAll(checkoutController.myvbox.getChildren());
+    
     }
 
      public void buy(ActionEvent event) throws IOException {
@@ -96,17 +107,17 @@ public class BrushesController implements Initializable{
         // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(button7)) {
             angularflatbrush.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane1);
+            checkoutController.addItem(checkoutController.pane4);
         }
 
         else if (sourceButton == button8) {
             flatbrush.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane2);
+            checkoutController.addItem(checkoutController.pane5);
         }
 
         else if (sourceButton == button9) {
             roundbrush.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane3);
+            checkoutController.addItem(checkoutController.pane6);
         }
     }
     
@@ -117,6 +128,15 @@ public class BrushesController implements Initializable{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Home.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    // Goes to Checkout.fxml
+    public void gotocart(ActionEvent event) throws IOException {
+
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
