@@ -15,14 +15,13 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
 
         try {
-
-
-            Image image = new Image("/images/brush.png");
+            
+            Image image = new Image("/images/logo.jpg");
 
             Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
             Scene scene = new Scene(root);
 
-            stage.setTitle("Art Shop");
+            stage.setTitle("Paint Like Van Gogh");
 
             stage.getIcons().add(image);
             
