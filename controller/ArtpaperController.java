@@ -15,11 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.StackPane;
-import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.fxml.Initializable;
 
@@ -28,13 +24,13 @@ public class ArtpaperController implements Initializable{
 @FXML
     Button button4, button5, button6, cartbutton;;
 
-     @FXML
+    @FXML
     Label name4, name5, name6, price4, price5, price6;
 
-      @FXML
+    @FXML
     ImageView img4, img5, img6;
 
-      @FXML
+    @FXML
     private Stage stage;
 
     @FXML
@@ -43,7 +39,10 @@ public class ArtpaperController implements Initializable{
     @FXML
     private Parent root = null;
 
-      FXMLLoader loader;
+    FXMLLoader loader;
+
+    @FXML
+    CheckoutController checkoutController = null;
     
     static SketchingPaper sketchingpaper = new SketchingPaper();
     static TonedPaper tonedpaper = new TonedPaper();
@@ -85,6 +84,17 @@ public class ArtpaperController implements Initializable{
         watercolorpaper.setProductImage("images/watercolorpaperpic.jpg");
         Image watercolorpaperpic = new Image(watercolorpaper.getProductImage());
         img6.setImage(watercolorpaperpic);
+
+        try {
+            loader = new FXMLLoader(getClass().getResource("/view/Checkout.fxml"));
+            root = loader.load();
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+        // Clears all items in Checkout.fxml
+        checkoutController = loader.getController();
+        checkoutController.myvbox.getChildren().removeAll(checkoutController.myvbox.getChildren());
     }
 
      public void buy(ActionEvent event) throws IOException {
@@ -96,19 +106,20 @@ public class ArtpaperController implements Initializable{
         // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(button4)) {
             sketchingpaper.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane1);
+            //checkoutController.addItem(checkoutController.pane1);
         }
 
         else if (sourceButton == button5) {
             tonedpaper.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane2);
+            //checkoutController.addItem(checkoutController.pane2);
         }
 
         else if (sourceButton == button6) {
             watercolorpaper.setProductStatus(true);
-            checkoutController.addItem(checkoutController.pane3);
+           // checkoutController.addItem(checkoutController.pane3);
         }
     }
+
 
     public void logo(ActionEvent event) throws IOException {
 
@@ -116,6 +127,15 @@ public class ArtpaperController implements Initializable{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Home.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    // Goes to Checkout.fxml
+    public void gotocart(ActionEvent event) throws IOException {
+
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
