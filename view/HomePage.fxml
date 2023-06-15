@@ -6,40 +6,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="650.0" fitWidth="1200.0">
+      <ImageView fitHeight="653.0" fitWidth="1204.0" layoutX="-2.0" layoutY="-2.0">
          <image>
-            <Image url="@../images/HomePage.jpg" />
+            <Image url="@Home%20Page.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="cart" layoutX="1113.0" layoutY="14.0" mnemonicParsing="false" onAction="#cart" prefHeight="38.0" prefWidth="65.0" style="-fx-background-color: #000000;">
-         <graphic>
-            <ImageView fitHeight="30.0" fitWidth="65.0">
-               <image>
-                  <Image url="@../images/AddToCart.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="logo" layoutX="24.0" layoutY="4.0" mnemonicParsing="false" onAction="#logo" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #000000;">
-         <graphic>
-            <ImageView fitHeight="50.0" fitWidth="110.0">
-               <image>
-                  <Image url="@../images/Logo1.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="account" layoutX="967.0" layoutY="14.0" mnemonicParsing="false" onAction="#account" style="-fx-background-color: #000000;" text="Account" textFill="WHITE">
+      <ImageView fitHeight="73.0" fitWidth="132.0" layoutX="28.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Add%20a%20heading.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="48.0" layoutY="27.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="96.0" style="-fx-background-color: #737373;" />
+      <Button layoutX="181.0" layoutY="34.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: #737373;" text="PRODUCTS" textFill="#ffde59">
          <font>
-            <Font name="System Bold" size="19.0" />
+            <Font name="Futura Medium" size="19.0" />
          </font>
       </Button>
-      <Button fx:id="products" layoutX="217.0" layoutY="15.0" mnemonicParsing="false" onAction="#product" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: black;" text="Products" textFill="WHITE">
+      <Button layoutX="767.0" layoutY="34.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #737373;" text="CONTACT US" textFill="#ffde59">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Futura Medium" size="19.0" />
          </font>
       </Button>
+      <Button layoutX="955.0" layoutY="34.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #737373;" text="ACCOUNT" textFill="#ffde59">
+         <font>
+            <Font name="Futura Medium" size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="1116.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cart.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="1128.0" layoutY="33.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="54.0" textFill="TRANSPARENT" />
    </children>
 </AnchorPane>
