@@ -2,6 +2,7 @@ package controller;
 
 import java.io.IOException;
 
+import alert.AlertMaker;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -11,7 +12,7 @@ import javafx.stage.Stage;
 
 public class ContactController {
     
-    public void logo(ActionEvent event) throws IOException {
+  public void logo(ActionEvent event) throws IOException {
 
     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/HomePage.fxml"));
@@ -19,7 +20,12 @@ public class ContactController {
     Scene scene = new Scene(root);
     stage.setScene(scene);
     stage.show();
+  }
 
+  public void send(ActionEvent event) throws IOException {
+
+    AlertMaker.showSuccessfulAlert("Your message have been sent!", " ");
+    
   }
 
 }
