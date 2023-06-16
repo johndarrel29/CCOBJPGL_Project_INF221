@@ -46,12 +46,12 @@ public class ProductsController implements Initializable{
     private Scene scene;
 
     @FXML
-    private Parent root = null;
+    static Parent root = null;
 
     FXMLLoader loader;
 
     @FXML
-    CartController CartController = null;
+    CartController cartController = null;
 
     static Watercolor watercolor = new Watercolor();
     static Gouache gouache = new Gouache();
@@ -176,7 +176,6 @@ public class ProductsController implements Initializable{
 
 
 
-
         try {
             loader = new FXMLLoader(getClass().getResource("/view/Cart.fxml"));
             root = loader.load();
@@ -185,11 +184,10 @@ public class ProductsController implements Initializable{
         }
 
         // Clears all items in Checkout.fxml
-        CartController = loader.getController();
-        CartController.myvbox.getChildren().removeAll(CartController.myvbox.getChildren());
+        cartController = loader.getController();
+        cartController.myvbox.getChildren().removeAll(cartController.myvbox.getChildren());
+
     }
-
-
 
 
 
@@ -203,59 +201,59 @@ public class ProductsController implements Initializable{
         if (sourceButton.equals(button1)) {
             watercolor.setProductStatus(true);
             ProductsController.watercolor.setProductQuantity(1);
-            CartController.addItem(CartController.pane1);
+            cartController.addItem(cartController.pane1);
         }
 
         else if (sourceButton == button2) {
             gouache.setProductStatus(true);
             ProductsController.gouache.setProductQuantity(1);
-            CartController.addItem(CartController.pane2);
+            cartController.addItem(cartController.pane2);
         }
 
         else if (sourceButton == button3) {
             postercolor.setProductStatus(true);
             ProductsController.postercolor.setProductQuantity(1);
-            CartController.addItem(CartController.pane3);
+            cartController.addItem(cartController.pane3);
         }
 
         else if (sourceButton == button4) {
             angularflatbrush.setProductStatus(true);
             ProductsController.angularflatbrush.setProductQuantity(1);
-            CartController.addItem(CartController.pane4);
+            cartController.addItem(cartController.pane4);
         }
 
         else if (sourceButton == button5) {
             flatbrush.setProductStatus(true);
             ProductsController.flatbrush.setProductQuantity(1);
-            CartController.addItem(CartController.pane5);
+            cartController.addItem(cartController.pane5);
         }
 
         else if (sourceButton == button6) {
             roundbrush.setProductStatus(true);
             ProductsController.roundbrush.setProductQuantity(1);
-            CartController.addItem(CartController.pane6);
+            cartController.addItem(cartController.pane6);
         }
 
         else if (sourceButton == button7) {
             sketchingpaper.setProductStatus(true);
             ProductsController.sketchingpaper.setProductQuantity(1);
-            CartController.addItem(CartController.pane7);
+            cartController.addItem(cartController.pane7);
         }
 
         else if (sourceButton == button8) {
             tonedpaper.setProductStatus(true);
             ProductsController.tonedpaper.setProductQuantity(1);
-            CartController.addItem(CartController.pane8);
+            cartController.addItem(cartController.pane8);
         }
 
         else if (sourceButton == button9) {
             watercolorpaper.setProductStatus(true);
             ProductsController.watercolorpaper.setProductQuantity(1);
-            CartController.addItem(CartController.pane9);
+            cartController.addItem(cartController.pane9);
         }
     }
 
-     // Goes to Checkout.fxml
+     // Goes to Cart.fxml
     public void gotocart(ActionEvent event) throws IOException {
 
         Scene scene = new Scene(root);
@@ -264,5 +262,14 @@ public class ProductsController implements Initializable{
         stage.show();
     }
 
+    public void logo(ActionEvent event) throws IOException {
 
+    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/HomePage.fxml"));
+    Parent root = loader.load();
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+    stage.show();
+  }
+  
 }
