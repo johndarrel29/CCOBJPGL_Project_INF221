@@ -37,7 +37,7 @@
          </font>
       </TextField>
       <TextArea layoutX="768.0" layoutY="335.0" opacity="0.49" prefHeight="131.0" prefWidth="250.0" promptText="Message" />
-      <Button fx:id="send" layoutX="864.0" layoutY="488.0" mnemonicParsing="false" opacity="0.76" style="-fx-background-color: #FFC20B;" text="Send">
+      <Button fx:id="send" layoutX="864.0" layoutY="488.0" mnemonicParsing="false" onAction="#send" opacity="0.76" style="-fx-background-color: #FFC20B;" text="Send">
          <font>
             <Font name="Copperplate" size="15.0" />
          </font>
