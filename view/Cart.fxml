@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="905.0" prefWidth="1423.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartController">
+   <children>
+      <VBox fx:id="myvbox" prefHeight="906.0" prefWidth="916.0">
+         <children>
+            <Pane fx:id="pane1" prefHeight="103.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img1" fitHeight="80.0" fitWidth="132.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/watercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="paint1" layoutX="167.0" layoutY="27.0" text="Watercolor">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price1" layoutX="181.0" layoutY="54.0" text="1200.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb1" layoutX="770.0" layoutY="25.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane2" prefHeight="118.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img2" fitHeight="103.0" fitWidth="104.0" layoutX="49.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/gouachepic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="paint2" layoutX="175.0" layoutY="16.0" text="Gouache">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price2" layoutX="178.0" layoutY="46.0" prefHeight="27.0" prefWidth="67.0" text="800.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb2" layoutX="768.0" layoutY="34.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane3" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img3" fitHeight="86.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/postercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="paint3" layoutX="163.0" layoutY="30.0" text="Poster Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price3" layoutX="187.0" layoutY="57.0" text="500.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb3" layoutX="765.0" layoutY="23.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane4" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img4" fitHeight="86.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/postercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="brush1" layoutX="163.0" layoutY="30.0" text="Poster Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price4" layoutX="187.0" layoutY="57.0" text="500.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb4" layoutX="761.0" layoutY="23.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane5" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img5" fitHeight="86.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/postercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="brush2" layoutX="163.0" layoutY="30.0" text="Poster Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price5" layoutX="187.0" layoutY="57.0" text="500.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb5" layoutX="764.0" layoutY="35.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane6" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img6" fitHeight="86.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/postercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="brush3" layoutX="163.0" layoutY="30.0" text="Poster Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price6" layoutX="187.0" layoutY="57.0" text="500.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb6" layoutX="776.0" layoutY="34.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane7" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img7" fitHeight="86.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/postercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="artpaper1" layoutX="163.0" layoutY="30.0" text="Poster Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price7" layoutX="187.0" layoutY="57.0" text="500.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb7" layoutX="771.0" layoutY="35.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane8" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img8" fitHeight="86.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/postercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="artpaper2" layoutX="163.0" layoutY="30.0" text="Poster Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price8" layoutX="187.0" layoutY="57.0" text="500.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb8" layoutX="768.0" layoutY="32.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pane9" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <ImageView fx:id="img9" fitHeight="86.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/postercolorpic.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="artpaper3" layoutX="163.0" layoutY="30.0" text="Poster Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price9" layoutX="187.0" layoutY="57.0" text="500.00">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cb9" layoutX="781.0" layoutY="46.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="957.0" layoutY="30.0" prefHeight="844.0" prefWidth="428.0">
+         <children>
+            <Label layoutX="50.0" layoutY="54.0" text="Total" textFill="#4a4141">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="95.0" text="Sub-Total:" textFill="#4a4141">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="total" layoutX="299.0" layoutY="95.0" text="0.00" textFill="#4a4141">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
