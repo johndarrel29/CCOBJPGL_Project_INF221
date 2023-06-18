@@ -36,12 +36,12 @@ public class BrushController implements Initializable {
     private Scene scene;
 
     @FXML
-    static Parent homeRoot = null;
+    static Parent root = null;
 
     FXMLLoader loader;
 
     @FXML
-    // static CheckoutController checkoutController = null;
+    static CartController cartController = null;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -78,19 +78,19 @@ public class BrushController implements Initializable {
         if (sourceButton.equals(button1)) {
             LoginController.angularflatbrush.setProductStatus(true);
             LoginController.angularflatbrush.setProductQuantity(1);
-            LoginController.cart.addItem(LoginController.cartController.pane1);
+            LoginController.cart.addItem(LoginController.cartController.pane7);
         }
 
         else if (sourceButton == button2) {
             LoginController.flatbrush.setProductStatus(true);
             LoginController.flatbrush.setProductQuantity(1);
-            LoginController.cart.addItem(LoginController.cartController.pane2);
+            LoginController.cart.addItem(LoginController.cartController.pane8);
         }
 
         else if (sourceButton == button3) {
             LoginController.roundbrush.setProductStatus(true);
             LoginController.roundbrush.setProductQuantity(1);
-            LoginController.cart.addItem(LoginController.cartController.pane3);
+            LoginController.cart.addItem(LoginController.cartController.pane9);
         }
 
         LoginController.cart.showItems();

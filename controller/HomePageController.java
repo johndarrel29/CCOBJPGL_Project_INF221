@@ -23,6 +23,8 @@ public class HomePageController {
   @FXML
   Button cart, logo, products;
 
+  private Stage stage;
+
 //@FXML
 //CartController cartController = null;
   
@@ -36,7 +38,12 @@ public class HomePageController {
 
   public void cart(ActionEvent event) throws IOException {
 
-    AlertMaker.showSimpleAlert("Notification", "You have no items yet");
+    //AlertMaker.showSimpleAlert("Notification", "You have no items yet");
+
+    Scene scene = new Scene(LoginController.root);
+    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    stage.setScene(scene);
+    stage.show();
 
   }
 

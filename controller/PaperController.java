@@ -36,7 +36,7 @@ public class PaperController implements Initializable {
     private Scene scene;
 
     @FXML
-    Parent root = null;
+    static Parent root = null;
 
     FXMLLoader loader;
 
@@ -46,25 +46,25 @@ public class PaperController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        // ============== Sketching Paper ==================//
-        paper1.setText(LoginController.sketchingpaper.getProductName());
-        price1.setText(Double.toString(LoginController.sketchingpaper.getProductPrice()));
-        Image sketchingpaperPic = new Image(LoginController.sketchingpaper.getProductImage());
-        img1.setImage(sketchingpaperPic);
+        // // ============== Sketching Paper ==================//
+        // paper1.setText(LoginController.sketchingpaper.getProductName());
+        // price1.setText(Double.toString(LoginController.sketchingpaper.getProductPrice()));
+        // Image sketchingpaperPic = new Image(LoginController.sketchingpaper.getProductImage());
+        // img1.setImage(sketchingpaperPic);
 
-        // ============== Toned Paper ==================//
+        // // ============== Toned Paper ==================//
 
-        paper2.setText(LoginController.canvasPaper.getProductName());
-        price2.setText(Double.toString(LoginController.canvasPaper.getProductPrice()));
-        Image tonedpaperPic = new Image(LoginController.canvasPaper.getProductImage());
-        img2.setImage(tonedpaperPic);
+        // paper2.setText(LoginController.canvasPaper.getProductName());
+        // price2.setText(Double.toString(LoginController.canvasPaper.getProductPrice()));
+        // Image tonedpaperPic = new Image(LoginController.canvasPaper.getProductImage());
+        // img2.setImage(tonedpaperPic);
 
-        // ============== Water Color Paper ==================//
+        // // ============== Water Color Paper ==================//
 
-        paper3.setText(LoginController.watercolorpaper.getProductName());
-        price3.setText(Double.toString(LoginController.watercolorpaper.getProductPrice()));
-        Image watercolorpaperPic = new Image(LoginController.watercolorpaper.getProductImage());
-        img3.setImage(watercolorpaperPic);
+        // paper3.setText(LoginController.watercolorpaper.getProductName());
+        // price3.setText(Double.toString(LoginController.watercolorpaper.getProductPrice()));
+        // Image watercolorpaperPic = new Image(LoginController.watercolorpaper.getProductImage());
+        // img3.setImage(watercolorpaperPic);
 
     }
 
@@ -78,19 +78,19 @@ public class PaperController implements Initializable {
         if (sourceButton.equals(button1)) {
             LoginController.sketchingpaper.setProductStatus(true);
             LoginController.sketchingpaper.setProductQuantity(1);
-            LoginController.cart.addItem(LoginController.cartController.pane1);
+            LoginController.cart.addItem(LoginController.cartController.pane4);
         }
 
         else if (sourceButton == button2) {
             LoginController.canvasPaper.setProductStatus(true);
             LoginController.canvasPaper.setProductQuantity(1);
-            LoginController.cart.addItem(LoginController.cartController.pane2);
+            LoginController.cart.addItem(LoginController.cartController.pane5);
         }
 
         else if (sourceButton == button3) {
             LoginController.watercolorpaper.setProductStatus(true);
             LoginController.watercolorpaper.setProductQuantity(1);
-            LoginController.cart.addItem(LoginController.cartController.pane3);
+            LoginController.cart.addItem(LoginController.cartController.pane6);
         }
 
         LoginController.cart.showItems();

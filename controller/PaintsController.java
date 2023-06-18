@@ -36,36 +36,36 @@ public class PaintsController implements Initializable {
     private Scene scene;
 
     @FXML
-    static Parent homeRoot = null;
+    static Parent root = null;
 
     FXMLLoader loader;
 
     @FXML
-    // static CheckoutController checkoutController = null;
+    static CartController cartController = null;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         // ============== Watercolor Paint ==================//
-        // paint1.setText(LoginController.watercolor.getProductName());
-        // price1.setText(Double.toString(LoginController.watercolor.getProductPrice()));
-        // Image watercolorPic = new Image(LoginController.watercolor.getProductImage());
-        // img1.setImage(watercolorPic);
+        paint1.setText(LoginController.watercolor.getProductName());
+        price1.setText(Double.toString(LoginController.watercolor.getProductPrice()));
+        Image watercolorPic = new Image(LoginController.watercolor.getProductImage());
+        img1.setImage(watercolorPic);
 
-        // // ============== Gouache Paint ==================//
+        // ============== Gouache Paint ==================//
 
-        // paint2.setText(LoginController.gouache.getProductName());
-        // price2.setText(Double.toString(LoginController.gouache.getProductPrice()));
+        paint2.setText(LoginController.gouache.getProductName());
+        price2.setText(Double.toString(LoginController.gouache.getProductPrice()));
 
-        // Image goauchePic = new Image(LoginController.gouache.getProductImage());
-        // img2.setImage(goauchePic);
+        Image goauchePic = new Image(LoginController.gouache.getProductImage());
+        img2.setImage(goauchePic);
 
-        // // ============== Poster Color Paint ==================//
+        // ============== Poster Color Paint ==================//
 
-        // paint3.setText(LoginController.acrylicPaint.getProductName());
-        // price3.setText(Double.toString(LoginController.acrylicPaint.getProductPrice()));
-        // Image acrylicpaintPic = new Image(LoginController.acrylicPaint.getProductImage());
-        // img3.setImage(acrylicpaintPic);
+        paint3.setText(LoginController.acrylicPaint.getProductName());
+        price3.setText(Double.toString(LoginController.acrylicPaint.getProductPrice()));
+        Image acrylicpaintPic = new Image(LoginController.acrylicPaint.getProductImage());
+        img3.setImage(acrylicpaintPic);
 
     }
 

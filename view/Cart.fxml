@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -30,11 +31,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb1" layoutX="770.0" layoutY="25.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb1" layoutX="770.0" layoutY="25.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox1" layoutX="383.0" layoutY="33.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane2" prefHeight="118.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -54,11 +56,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb2" layoutX="768.0" layoutY="34.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb2" layoutX="768.0" layoutY="34.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox2" layoutX="386.0" layoutY="35.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane3" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -78,11 +81,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb3" layoutX="765.0" layoutY="23.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb3" layoutX="765.0" layoutY="23.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox3" layoutX="392.0" layoutY="43.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane4" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -102,11 +106,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb4" layoutX="761.0" layoutY="23.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb4" layoutX="761.0" layoutY="23.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox4" layoutX="387.0" layoutY="45.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane5" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -126,11 +131,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb5" layoutX="764.0" layoutY="35.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb5" layoutX="764.0" layoutY="35.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox5" layoutX="388.0" layoutY="42.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane6" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -150,11 +156,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb6" layoutX="776.0" layoutY="34.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb6" layoutX="776.0" layoutY="34.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox6" layoutX="400.0" layoutY="48.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane7" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -174,11 +181,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb7" layoutX="771.0" layoutY="35.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb7" layoutX="771.0" layoutY="35.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox7" layoutX="404.0" layoutY="48.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane8" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -198,11 +206,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb8" layoutX="768.0" layoutY="32.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb8" layoutX="768.0" layoutY="32.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox8" layoutX="418.0" layoutY="52.0" prefWidth="150.0" />
                </children>
             </Pane>
             <Pane fx:id="pane9" prefHeight="116.0" prefWidth="1185.0" style="-fx-background-color: lightgrey;">
@@ -222,11 +231,12 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb9" layoutX="781.0" layoutY="46.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb9" layoutX="781.0" layoutY="46.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
+                  <ChoiceBox fx:id="choicebox9" layoutX="425.0" layoutY="43.0" prefWidth="150.0" />
                </children>
             </Pane>
          </children>

@@ -44,10 +44,12 @@ public class LoginController implements Initializable {
     @FXML
     static Parent root = null;
 
+    FXMLLoader loader;
+
     @FXML
     HomePageController homepageController = null;
 
-     @FXML
+    @FXML
     static CartController cartController = null;
 
     static Watercolor watercolor = new Watercolor();
@@ -106,7 +108,19 @@ public class LoginController implements Initializable {
         watercolorpaper.setProductPrice(199);
         watercolorpaper.setProductImage("images/watercolorpaperpic.jpg");
 
-        
+        try {
+            loader = new FXMLLoader(getClass().getResource("/view/Cart.fxml"));
+            root = loader.load();
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+
+        }
+
+        // Clears all items in Checkout.fxml
+        cartController = loader.getController();
+        cartController.myvbox.getChildren().removeAll(cartController.myvbox.getChildren());
 
     }
 
