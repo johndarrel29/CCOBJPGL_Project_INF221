@@ -32,7 +32,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb1" layoutX="770.0" layoutY="25.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb1" layoutX="770.0" layoutY="25.0" mnemonicParsing="false" onAction="#computeTotal" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -57,7 +57,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <CheckBox fx:id="cb2" layoutX="768.0" layoutY="34.0" mnemonicParsing="false" onAction="#getInitialAmount" prefHeight="40.0" prefWidth="35.0">
+                  <CheckBox fx:id="cb2" layoutX="768.0" layoutY="34.0" mnemonicParsing="false" onAction="#computeTotal" prefHeight="40.0" prefWidth="35.0">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -260,6 +260,7 @@
                </font>
             </Label>
             <Button layoutX="290.0" layoutY="10.0" mnemonicParsing="false" onAction="#logo" prefHeight="64.0" prefWidth="105.0" text="LOGO" />
+            <Button fx:id="receipt" layoutX="151.0" layoutY="677.0" mnemonicParsing="false" onAction="#checkout" prefHeight="64.0" prefWidth="114.0" text="checkout" />
          </children>
       </Pane>
    </children>

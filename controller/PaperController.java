@@ -46,25 +46,25 @@ public class PaperController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        // // ============== Sketching Paper ==================//
-        // paper1.setText(LoginController.sketchingpaper.getProductName());
-        // price1.setText(Double.toString(LoginController.sketchingpaper.getProductPrice()));
-        // Image sketchingpaperPic = new Image(LoginController.sketchingpaper.getProductImage());
-        // img1.setImage(sketchingpaperPic);
+        // ============== Sketching Paper ==================//
+        paper1.setText(LoginController.sketchingpaper.getProductName());
+        price1.setText(Double.toString(LoginController.sketchingpaper.getProductPrice()));
+        Image sketchingpaperPic = new Image(LoginController.sketchingpaper.getProductImage());
+        img1.setImage(sketchingpaperPic);
 
-        // // ============== Toned Paper ==================//
+        // ============== Toned Paper ==================//
 
-        // paper2.setText(LoginController.canvasPaper.getProductName());
-        // price2.setText(Double.toString(LoginController.canvasPaper.getProductPrice()));
-        // Image tonedpaperPic = new Image(LoginController.canvasPaper.getProductImage());
-        // img2.setImage(tonedpaperPic);
+        paper2.setText(LoginController.canvasPaper.getProductName());
+        price2.setText(Double.toString(LoginController.canvasPaper.getProductPrice()));
+        Image tonedpaperPic = new Image(LoginController.canvasPaper.getProductImage());
+        img2.setImage(tonedpaperPic);
 
-        // // ============== Water Color Paper ==================//
+        // ============== Water Color Paper ==================//
 
-        // paper3.setText(LoginController.watercolorpaper.getProductName());
-        // price3.setText(Double.toString(LoginController.watercolorpaper.getProductPrice()));
-        // Image watercolorpaperPic = new Image(LoginController.watercolorpaper.getProductImage());
-        // img3.setImage(watercolorpaperPic);
+        paper3.setText(LoginController.watercolorpaper.getProductName());
+        price3.setText(Double.toString(LoginController.watercolorpaper.getProductPrice()));
+        Image watercolorpaperPic = new Image(LoginController.watercolorpaper.getProductImage());
+        img3.setImage(watercolorpaperPic);
 
     }
 

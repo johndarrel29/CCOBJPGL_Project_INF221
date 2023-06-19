@@ -18,9 +18,9 @@
       <Button layoutX="16.0" layoutY="188.0" mnemonicParsing="false" onAction="#paints" opacity="0.0" prefHeight="39.0" prefWidth="133.0" text="paints" />
       <Button layoutX="7.0" layoutY="290.0" mnemonicParsing="false" onAction="#artpapers" opacity="0.0" prefHeight="51.0" prefWidth="134.0" text="artpaper" />
       <Button fx:id="cart" layoutX="46.0" layoutY="566.0" mnemonicParsing="false" onAction="#gotocart" opacity="0.0" prefHeight="50.0" prefWidth="54.0" text="cart" />
-      <Button layoutX="293.0" layoutY="513.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
-      <Button layoutX="630.0" layoutY="513.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
-      <Button layoutX="969.0" layoutY="514.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
+      <Button fx:id="button1" layoutX="293.0" layoutY="513.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
+      <Button fx:id="button2" layoutX="630.0" layoutY="513.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
+      <Button fx:id="button3" layoutX="969.0" layoutY="514.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
       <Label fx:id="brush1" layoutX="228.0" layoutY="90.0" text="ANGULAR BRUSH">
          <font>
             <Font name="Futura Medium" size="28.0" />

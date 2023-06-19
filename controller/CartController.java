@@ -156,9 +156,10 @@ public class CartController implements Initializable {
             LoginController.watercolor.setProductQuantity(qty);
             item1Amount = LoginController.watercolor.getProductPrice() * qty;
 
-            if (source == choicebox1) {
+            if (cb1.isSelected()) {
                 item1Amount = LoginController.watercolor.getProductPrice() * qty;
             }
+
         }
 
         if (LoginController.gouache.getProductStatus()) {
@@ -205,14 +206,14 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.watercolor.getProductStatus()) {
+        if (LoginController.watercolorpaper.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox6.getValue());
-            LoginController.watercolor.setProductQuantity(qty);
-            item6Amount = LoginController.watercolor.getProductPrice() * qty;
+            LoginController.watercolorpaper.setProductQuantity(qty);
+            item6Amount = LoginController.watercolorpaper.getProductPrice() * qty;
 
             if (source == choicebox6) {
-                item6Amount = LoginController.watercolor.getProductPrice() * qty;
+                item6Amount = LoginController.watercolorpaper.getProductPrice() * qty;
             }
         }
 
@@ -283,39 +284,39 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.angularbrush.getProductStatus()) {
-            if (cb4.isSelected()){
-                totalamount += LoginController.angularbrush.getProductPrice();
-            }
-        }
-
-        if (LoginController.flatbrush.getProductStatus()) {
-            if (cb5.isSelected()){
-                totalamount += LoginController.flatbrush.getProductPrice();
-            }
-        }
-
-        if (LoginController.roundbrush.getProductStatus()) {
-            if (cb6.isSelected()){
-                totalamount += LoginController.roundbrush.getProductPrice();
-            }
-        }
-
         if (LoginController.sketchingpaper.getProductStatus()) {
-            if (cb7.isSelected()){
+            if (cb4.isSelected()){
                 totalamount += LoginController.sketchingpaper.getProductPrice();
             }
         }
 
         if (LoginController.canvasPaper.getProductStatus()) {
-            if (cb8.isSelected()){
+            if (cb5.isSelected()){
                 totalamount += LoginController.canvasPaper.getProductPrice();
             }
         }
 
         if (LoginController.watercolorpaper.getProductStatus()) {
-            if (cb9.isSelected()){
+            if (cb6.isSelected()){
                 totalamount += LoginController.watercolorpaper.getProductPrice();
+            }
+        }
+
+        if (LoginController.angularbrush.getProductStatus()) {
+            if (cb7.isSelected()){
+                totalamount += LoginController.angularbrush.getProductPrice();
+            }
+        }
+
+        if (LoginController.flatbrush.getProductStatus()) {
+            if (cb8.isSelected()){
+                totalamount += LoginController.flatbrush.getProductPrice();
+            }
+        }
+
+        if (LoginController.roundbrush.getProductStatus()) {
+            if (cb9.isSelected()){
+                totalamount += LoginController.roundbrush.getProductPrice();
             }
         }
 
@@ -324,21 +325,20 @@ public class CartController implements Initializable {
     }
 
 
-    // // Go to Receipt Page
-    // public void checkout(ActionEvent event) throws IOException {
+    // Go to Receipt Page
+    public void checkout(ActionEvent event) throws IOException {
 
-    //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    //     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Receipt.fxml"));
-    //     Parent root = loader.load();
-    //     Scene scene = new Scene(root);
-    //     stage.setScene(scene);
-    //     stage.show();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/receipt.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
 
-    // }
+    }
 
     // go to home page
-
-      public void logo(ActionEvent event) throws IOException {
+    public void logo(ActionEvent event) throws IOException {
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/HomePage.fxml"));
