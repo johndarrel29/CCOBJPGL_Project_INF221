@@ -29,7 +29,7 @@ public class CartController implements Initializable {
     VBox myvbox;
 
     @FXML
-     Label paint1, paint2, paint3, brush1, brush2, brush3, artpaper1, artpaper2, artpaper3, 
+     Label paint1, paint2, paint3, brush1, brush2, brush3, paper1, paper2, paper3, 
     price1, price2, price3, price4, price5, price6, price7, price8, price9, total;
 
     @FXML
@@ -64,41 +64,40 @@ public class CartController implements Initializable {
         Image postercolorpic = new Image(LoginController.acrylicPaint.getProductImage());
         img3.setImage(postercolorpic);
 
-        //=================================BRUSHES======================================//
-
-        brush1.setText(LoginController.angularflatbrush.getProductName());
-        price4.setText(Double.toString(LoginController.angularflatbrush.getProductPrice()));
-        Image angpic = new Image(LoginController.angularflatbrush.getProductImage());
-        img4.setImage(angpic);
-
-        brush2.setText(LoginController.flatbrush.getProductName());
-        price5.setText(Double.toString(LoginController.flatbrush.getProductPrice()));
-        Image flatpic = new Image(LoginController.flatbrush.getProductImage());
-        img5.setImage(flatpic);
-
-        brush3.setText(LoginController.roundbrush.getProductName());
-        price6.setText(Double.toString(LoginController.roundbrush.getProductPrice()));
-        Image roundpic = new Image(LoginController.roundbrush.getProductImage());
-        img6.setImage(roundpic);
 
         //===================================ART PAPERS===================================//
 
-        artpaper1.setText(LoginController.sketchingpaper.getProductName());
-        price7.setText(Double.toString(LoginController.sketchingpaper.getProductPrice()));
+        paper1.setText(LoginController.sketchingpaper.getProductName());
+        price4.setText(Double.toString(LoginController.sketchingpaper.getProductPrice()));
         Image sketchpic = new Image(LoginController.sketchingpaper.getProductImage());
-        img7.setImage(sketchpic);
+        img4.setImage(sketchpic);
 
-        artpaper2.setText(LoginController.canvasPaper.getProductName());
-        price8.setText(Double.toString(LoginController.canvasPaper.getProductPrice()));
+        paper2.setText(LoginController.canvasPaper.getProductName());
+        price5.setText(Double.toString(LoginController.canvasPaper.getProductPrice()));
         Image tonedpic = new Image(LoginController.canvasPaper.getProductImage());
-        img8.setImage(tonedpic);
+        img5.setImage(tonedpic);
 
-        artpaper3.setText(LoginController.watercolorpaper.getProductName());
-        price9.setText(Double.toString(LoginController.watercolorpaper.getProductPrice()));
+        paper3.setText(LoginController.watercolorpaper.getProductName());
+        price6.setText(Double.toString(LoginController.watercolorpaper.getProductPrice()));
         Image waterpaperpic = new Image(LoginController.watercolorpaper.getProductImage());
-        img9.setImage(waterpaperpic);
+        img6.setImage(waterpaperpic);
 
-    
+      //=================================BRUSHES======================================//
+
+        brush1.setText(LoginController.angularbrush.getProductName());
+        price7.setText(Double.toString(LoginController.angularbrush.getProductPrice()));
+        Image angpic = new Image(LoginController.angularbrush.getProductImage());
+        img7.setImage(angpic);
+
+        brush2.setText(LoginController.flatbrush.getProductName());
+        price8.setText(Double.toString(LoginController.flatbrush.getProductPrice()));
+        Image flatpic = new Image(LoginController.flatbrush.getProductImage());
+        img8.setImage(flatpic);
+
+        brush3.setText(LoginController.roundbrush.getProductName());
+        price9.setText(Double.toString(LoginController.roundbrush.getProductPrice()));
+        Image roundpic = new Image(LoginController.roundbrush.getProductImage());
+        img9.setImage(roundpic);
 
 
         // Set default quantities in choicebox to 1
@@ -217,14 +216,14 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.angularflatbrush.getProductStatus()) {
+        if (LoginController.angularbrush.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox7.getValue());
-            LoginController.angularflatbrush.setProductQuantity(qty);
-            item7Amount = LoginController.angularflatbrush.getProductPrice() * qty;
+            LoginController.angularbrush.setProductQuantity(qty);
+            item7Amount = LoginController.angularbrush.getProductPrice() * qty;
 
             if (source == choicebox7) {
-                item7Amount = LoginController.angularflatbrush.getProductPrice() * qty;
+                item7Amount = LoginController.angularbrush.getProductPrice() * qty;
             }
         }
 
@@ -284,9 +283,9 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.angularflatbrush.getProductStatus()) {
+        if (LoginController.angularbrush.getProductStatus()) {
             if (cb4.isSelected()){
-                totalamount += LoginController.angularflatbrush.getProductPrice();
+                totalamount += LoginController.angularbrush.getProductPrice();
             }
         }
 
@@ -337,6 +336,18 @@ public class CartController implements Initializable {
 
     // }
 
+    // go to home page
+
+      public void logo(ActionEvent event) throws IOException {
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/HomePage.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
     // Show all items in ArrayList
     public void showItems(ArrayList<Pane> itemList) {
         for (Pane p : itemList) {

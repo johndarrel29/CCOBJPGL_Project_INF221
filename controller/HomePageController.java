@@ -60,7 +60,7 @@ public class HomePageController {
   public void product(ActionEvent event) throws IOException {
 
     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/paintsUI.fxml"));
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/paints.fxml"));
     Parent root = loader.load();
     Scene scene = new Scene(root);
     stage.setScene(scene);

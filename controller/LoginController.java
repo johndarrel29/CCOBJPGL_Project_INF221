@@ -13,7 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import model.AngularflatBrush;
+import model.AngularBrush;
 import model.FlatBrush;
 import model.Gouache;
 import model.AcrylicPaint;
@@ -55,7 +55,7 @@ public class LoginController implements Initializable {
     static Watercolor watercolor = new Watercolor();
     static Gouache gouache = new Gouache();
     static AcrylicPaint acrylicPaint = new AcrylicPaint();
-    static AngularflatBrush angularflatbrush = new AngularflatBrush();
+    static AngularBrush angularbrush = new AngularBrush();
     static FlatBrush flatbrush = new FlatBrush();
     static RoundBrush roundbrush = new RoundBrush();
     static SketchPad sketchingpaper = new SketchPad();
@@ -82,9 +82,9 @@ public class LoginController implements Initializable {
 
         //============================Brushes======================================//
 
-        angularflatbrush.setProductName("ANGULAR BRUSH");
-        angularflatbrush.setProductPrice(207);
-        angularflatbrush.setProductImage("images/angularflatbrushpic.jpg");
+        angularbrush.setProductName("ANGULAR BRUSH");
+        angularbrush.setProductPrice(207);
+        angularbrush.setProductImage("images/angularbrushpic.jpg");
 
         flatbrush.setProductName("FLAT BRUSH");
         flatbrush.setProductPrice(120);

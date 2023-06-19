@@ -47,9 +47,9 @@ public class BrushController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         // ============== Angularflat Brush ==================//
-        brush1.setText(LoginController.angularflatbrush.getProductName());
-        price1.setText(Double.toString(LoginController.angularflatbrush.getProductPrice()));
-        Image angularflatbrushPic = new Image(LoginController.angularflatbrush.getProductImage());
+        brush1.setText(LoginController.angularbrush.getProductName());
+        price1.setText(Double.toString(LoginController.angularbrush.getProductPrice()));
+        Image angularflatbrushPic = new Image(LoginController.angularbrush.getProductImage());
         img1.setImage(angularflatbrushPic);
 
         // ============== Flat Brush ==================//
@@ -76,8 +76,8 @@ public class BrushController implements Initializable {
 
         // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(button1)) {
-            LoginController.angularflatbrush.setProductStatus(true);
-            LoginController.angularflatbrush.setProductQuantity(1);
+            LoginController.angularbrush.setProductStatus(true);
+            LoginController.angularbrush.setProductQuantity(1);
             LoginController.cart.addItem(LoginController.cartController.pane7);
         }
 
@@ -114,7 +114,27 @@ public class BrushController implements Initializable {
     // Goes to Checkout.fxml
     public void logo(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("/view/Products.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/HomePage.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    // go to paint
+        public void paints(ActionEvent event) throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/view/paints.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    // go to artpaper
+    public void artpapers(ActionEvent event) throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/view/artpapers.fxml"));
         Scene scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);

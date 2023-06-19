@@ -126,7 +126,18 @@ public class PaintsController implements Initializable {
 
      public void artpaper(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("/view/artpapersUI.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/artpapers.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    // go to brush 
+
+    public void brush(ActionEvent event) throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/view/brush.fxml"));
         Scene scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
