@@ -150,19 +150,20 @@ public class CartController implements Initializable {
         ChoiceBox source = (ChoiceBox) event.getSource();
 
         // If product is chosen, compute item amount
-        if (LoginController.watercolor.getProductStatus()) {
+        if (cb1.isSelected() && LoginController.watercolor.getProductStatus()) {
 
+            getInitialAmount();
             double qty = Double.parseDouble(choicebox1.getValue());
             LoginController.watercolor.setProductQuantity(qty);
             item1Amount = LoginController.watercolor.getProductPrice() * qty;
 
-            if (cb1.isSelected()) {
+            if (source == choicebox1) {
                 item1Amount = LoginController.watercolor.getProductPrice() * qty;
             }
 
         }
 
-        if (LoginController.gouache.getProductStatus()) {
+        if (cb2.isSelected() && LoginController.gouache.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox2.getValue());
             LoginController.gouache.setProductQuantity(qty);
@@ -173,7 +174,7 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.acrylicPaint.getProductStatus()) {
+        if (cb3.isSelected() && LoginController.acrylicPaint.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox3.getValue());
             LoginController.acrylicPaint.setProductQuantity(qty);
@@ -184,7 +185,7 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.sketchingpaper.getProductStatus()) {
+        if (cb4.isSelected() && LoginController.sketchingpaper.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox4.getValue());
             LoginController.sketchingpaper.setProductQuantity(qty);
@@ -195,7 +196,7 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.canvasPaper.getProductStatus()) {
+        if (cb5.isSelected() && LoginController.canvasPaper.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox5.getValue());
             LoginController.canvasPaper.setProductQuantity(qty);
@@ -206,7 +207,7 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.watercolorpaper.getProductStatus()) {
+        if (cb6.isSelected() && LoginController.watercolorpaper.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox6.getValue());
             LoginController.watercolorpaper.setProductQuantity(qty);
@@ -217,7 +218,7 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.angularbrush.getProductStatus()) {
+        if (cb7.isSelected() && LoginController.angularbrush.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox7.getValue());
             LoginController.angularbrush.setProductQuantity(qty);
@@ -228,7 +229,7 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.flatbrush.getProductStatus()) {
+        if (cb8.isSelected() && LoginController.flatbrush.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox8.getValue());
             LoginController.flatbrush.setProductQuantity(qty);
@@ -239,7 +240,7 @@ public class CartController implements Initializable {
             }
         }
 
-        if (LoginController.roundbrush.getProductStatus()) {
+        if (cb9.isSelected() && LoginController.roundbrush.getProductStatus()) {
 
             double qty = Double.parseDouble(choicebox9.getValue());
             LoginController.roundbrush.setProductQuantity(qty);
