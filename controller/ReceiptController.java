@@ -156,6 +156,7 @@ public class ReceiptController implements Initializable {
 
         double final_amount = item1Amount + item2Amount + item3Amount + item4Amount + item5Amount + item6Amount + item7Amount + item8Amount + item4Amount;
         total.setText(Double.toString(final_amount));
+        total.setVisible(true);
 
         
     }
