@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BrushController">
+   <children>
+      <ImageView fitHeight="656.0" fitWidth="1200.0" layoutY="-5.0">
+         <image>
+            <Image url="@../images/brush.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="17.0" layoutY="18.0" mnemonicParsing="false" onAction="#logo" opacity="0.0" prefHeight="54.0" prefWidth="113.0" text="logo" />
+      <Button layoutX="16.0" layoutY="188.0" mnemonicParsing="false" onAction="#paints" opacity="0.0" prefHeight="39.0" prefWidth="133.0" text="paints" />
+      <Button layoutX="7.0" layoutY="290.0" mnemonicParsing="false" onAction="#artpapers" opacity="0.0" prefHeight="51.0" prefWidth="134.0" text="artpaper" />
+      <Button fx:id="cart" layoutX="46.0" layoutY="566.0" mnemonicParsing="false" onAction="#gotocart" opacity="0.0" prefHeight="50.0" prefWidth="54.0" text="cart" />
+      <Button fx:id="button7" layoutX="293.0" layoutY="513.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
+      <Button fx:id="button8" layoutX="630.0" layoutY="513.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
+      <Button fx:id="button9" layoutX="969.0" layoutY="514.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="49.0" prefWidth="93.0" text="add" />
+      <Label fx:id="brush1" layoutX="228.0" layoutY="90.0" text="ANGULAR BRUSH">
+         <font>
+            <Font name="Futura Medium" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="brush2" layoutX="597.0" layoutY="91.0" text="FLAT BRUSH">
+         <font>
+            <Font name="Futura Medium" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="brush3" layoutX="912.0" layoutY="91.0" text="ROUND BRUSH">
+         <font>
+            <Font name="Futura Medium" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img1" fitHeight="314.0" fitWidth="281.0" layoutX="200.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/angularbrushpic.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img2" fitHeight="275.0" fitWidth="275.0" layoutX="541.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/flatbrushpic.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="277.0" fitWidth="283.0" layoutX="874.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../images/roundbrushpic.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="price1" layoutX="306.0" layoutY="473.0" text="207.0">
+         <font>
+            <Font name="Futura Medium" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="price2" layoutX="641.0" layoutY="474.0" text="120.0">
+         <font>
+            <Font name="Futura Medium" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="price3" layoutX="979.0" layoutY="474.0" text="159.0">
+         <font>
+            <Font name="Futura Medium" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

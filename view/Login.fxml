@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1211.0" layoutX="-10.0">
+         <image>
+            <Image url="@../images/LogIn.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="mytextfield" layoutX="246.0" layoutY="360.0" opacity="0.56" prefHeight="40.0" prefWidth="256.0" style="-fx-background-color: #737373#737373;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="mypasswordfield" layoutX="245.0" layoutY="437.0" opacity="0.58" prefHeight="39.0" prefWidth="257.0" style="-fx-background-color: #737373;" />
+      <Button fx:id="loginbutton" layoutX="345.0" layoutY="507.0" mnemonicParsing="false" onAction="#login" opacity="0.73" prefHeight="32.0" prefWidth="81.0" style="-fx-background-color: #FFC20B;" text="Log In">
+         <font>
+            <Font name="Copperplate" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="245.0" layoutY="329.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="Copperplate" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="409.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="Copperplate" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="117.0" layoutX="35.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logo" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" opacity="0.0" prefHeight="58.0" prefWidth="141.0" style="-fx-background-color: black;">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Label fx:id="mywarninglabel" layoutX="256.0" layoutY="542.0" prefHeight="46.0" prefWidth="308.0" text="Username and Password does not match" textFill="#c64949" visible="false">
+         <font>
+            <Font name="Copperplate" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
