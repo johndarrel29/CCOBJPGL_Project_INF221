@@ -119,7 +119,7 @@ public class LoginController implements Initializable {
         
 
         try {
-            loader = new FXMLLoader(getClass().getResource("/view/cart2.fxml"));
+            loader = new FXMLLoader(getClass().getResource("/view/Cart.fxml"));
             root = loader.load();
 
         } catch (Exception e) {
@@ -136,7 +136,7 @@ public class LoginController implements Initializable {
         FXMLLoader receiptloader = null;
  
         try {
-            receiptloader = new FXMLLoader(getClass().getResource("/view/receipt2.fxml"));
+            receiptloader = new FXMLLoader(getClass().getResource("/view/Receipt.fxml"));
             receiptRoot = receiptloader.load();
 
         } catch (Exception e) {

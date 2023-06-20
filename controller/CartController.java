@@ -170,7 +170,6 @@ public class CartController implements Initializable {
             if (source == choicebox2) {
                 item2Amount = LoginController.gouache.getProductPrice() * qty;
             }
-
         }
 
         if (cb3.isSelected() && LoginController.acrylicPaint.getProductStatus()) {
@@ -276,7 +275,6 @@ public class CartController implements Initializable {
         if (LoginController.watercolor.getProductStatus()) {
             if (cb1.isSelected()){
                 totalamount += LoginController.watercolor.getProductPrice();
-
             }
         }
 
@@ -341,7 +339,25 @@ public class CartController implements Initializable {
             LoginController.receipt.addtoReceipt(LoginController.receiptController.pane2);
         }
         if (LoginController.acrylicPaint.getItemReceiptStatus()) {
-            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane2);
+            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane3);
+        }
+        if (LoginController.sketchingpaper.getItemReceiptStatus()) {
+            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane4);
+        }
+        if (LoginController.canvasPaper.getItemReceiptStatus()) {
+            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane5);
+        }
+        if (LoginController.watercolorpaper.getItemReceiptStatus()) {
+            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane6);
+        }
+        if (LoginController.angularbrush.getItemReceiptStatus()) {
+            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane7);
+        }
+        if (LoginController.flatbrush.getItemReceiptStatus()) {
+            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane8);
+        }
+        if (LoginController.roundbrush.getItemReceiptStatus()) {
+            LoginController.receipt.addtoReceipt(LoginController.receiptController.pane9);
         }
 
     }
@@ -357,6 +373,8 @@ public class CartController implements Initializable {
             } else {
                 LoginController.watercolor.setItemReceiptStatus(false);
             }
+
+            getInitialAmount();
         }
         if(checkbox.equals(cb2)){
 
@@ -365,6 +383,8 @@ public class CartController implements Initializable {
             } else {
                 LoginController.gouache.setItemReceiptStatus(false);
             }
+
+            getInitialAmount();
         }
         if(checkbox.equals(cb3)){
 
@@ -373,13 +393,69 @@ public class CartController implements Initializable {
             } else {
                 LoginController.acrylicPaint.setItemReceiptStatus(false);
             }
+
+            getInitialAmount();
         }
-        
+        if(checkbox.equals(cb4)){
 
+            if (LoginController.sketchingpaper.getItemReceiptStatus() == false) {
+                LoginController.sketchingpaper.setItemReceiptStatus(true);
+            } else {
+                LoginController.sketchingpaper.setItemReceiptStatus(false);
+            }
 
-        System.out.println(LoginController.watercolor.getItemReceiptStatus());
-        System.out.println(LoginController.gouache.getItemReceiptStatus());
-        System.out.println(LoginController.acrylicPaint.getItemReceiptStatus());
+            getInitialAmount();
+        }
+        if(checkbox.equals(cb5)){
+
+            if (LoginController.canvasPaper.getItemReceiptStatus() == false) {
+                LoginController.canvasPaper.setItemReceiptStatus(true);
+            } else {
+                LoginController.canvasPaper.setItemReceiptStatus(false);
+            }
+
+            getInitialAmount();
+        }
+        if(checkbox.equals(cb6)){
+
+            if (LoginController.watercolorpaper.getItemReceiptStatus() == false) {
+                LoginController.watercolorpaper.setItemReceiptStatus(true);
+            } else {
+                LoginController.watercolorpaper.setItemReceiptStatus(false);
+            }
+
+            getInitialAmount();
+        }
+        if(checkbox.equals(cb7)){
+
+            if (LoginController.angularbrush.getItemReceiptStatus() == false) {
+                LoginController.angularbrush.setItemReceiptStatus(true);
+            } else {
+                LoginController.angularbrush.setItemReceiptStatus(false);
+            }
+
+            getInitialAmount();
+        }
+        if(checkbox.equals(cb8)){
+
+            if (LoginController.flatbrush.getItemReceiptStatus() == false) {
+                LoginController.flatbrush.setItemReceiptStatus(true);
+            } else {
+                LoginController.flatbrush.setItemReceiptStatus(false);
+            }
+
+            getInitialAmount();
+        }
+        if(checkbox.equals(cb9)){
+
+            if (LoginController.roundbrush.getItemReceiptStatus() == false) {
+                LoginController.roundbrush.setItemReceiptStatus(true);
+            } else {
+                LoginController.roundbrush.setItemReceiptStatus(false);
+            }
+
+            getInitialAmount();
+        }
     }
 
     // Go to Receipt Page
