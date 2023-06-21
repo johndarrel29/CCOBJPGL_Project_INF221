@@ -15,12 +15,7 @@
             <Image url="@../images/contact.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="54.0" fitWidth="101.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Logo1.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="logo" layoutX="29.0" layoutY="20.0" mnemonicParsing="false" onAction="#logo" opacity="0.0" prefHeight="45.0" prefWidth="98.0" />
+      <Button fx:id="logo" layoutX="28.0" layoutY="31.0" mnemonicParsing="false" onAction="#logo" opacity="0.0" prefHeight="45.0" prefWidth="98.0" />
       <TextField layoutX="768.0" layoutY="187.0" prefHeight="32.0" prefWidth="252.0" promptText="Name" style="-fx-background-color: #EBEDF1;">
          <font>
             <Font name="Futura Medium" size="13.0" />

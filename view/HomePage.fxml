@@ -13,32 +13,23 @@
             <Image url="@../images/HomePage.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="48.0" fitWidth="96.0" layoutX="52.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Logo1.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="Logo" layoutX="48.0" layoutY="27.0" mnemonicParsing="false" onAction="#logo" opacity="0.0" prefHeight="48.0" prefWidth="96.0" style="-fx-background-color: #737373;" />
-      <Button fx:id="Products" layoutX="193.0" layoutY="33.0" mnemonicParsing="false" onAction="#product" prefHeight="12.0" prefWidth="128.0" style="-fx-background-color: #737373;" text="PRODUCTS" textFill="#ffde59">
+      <Button fx:id="Logo" layoutX="22.0" layoutY="29.0" mnemonicParsing="false" onAction="#logo" opacity="0.0" prefHeight="44.0" prefWidth="105.0" style="-fx-background-color: #737373;" />
+      <Button fx:id="Products" layoutX="201.0" layoutY="35.0" mnemonicParsing="false" onAction="#product" opacity="0.0" prefHeight="12.0" prefWidth="128.0" style="-fx-background-color: #737373;" text="PRODUCTS" textFill="#ffde59">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="Contact" layoutX="766.0" layoutY="33.0" mnemonicParsing="false" onAction="#contact" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #737373;" text="CONTACT US" textFill="#ffde59">
+      <Button fx:id="Contact" layoutX="659.0" layoutY="34.0" mnemonicParsing="false" onAction="#contact" opacity="0.0" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #737373;" textFill="#ffde59">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="Account" layoutX="953.0" layoutY="33.0" mnemonicParsing="false" onAction="#account" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #737373;" text="ACCOUNT" textFill="#ffde59">
+      <Button fx:id="Account" layoutX="883.0" layoutY="36.0" mnemonicParsing="false" onAction="#account" opacity="0.0" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #737373;" textFill="#ffde59">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="1116.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/cart.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="Cart" layoutX="1128.0" layoutY="33.0" mnemonicParsing="false" onAction="#cart" opacity="0.0" prefHeight="39.0" prefWidth="54.0" textFill="TRANSPARENT" />
+      <Button fx:id="Cart" layoutX="1065.0" layoutY="33.0" mnemonicParsing="false" onAction="#cart" opacity="0.0" prefHeight="39.0" prefWidth="54.0" textFill="TRANSPARENT" />
+      <Button fx:id="credits" layoutX="1039.0" layoutY="595.0" mnemonicParsing="false" onAction="#credits" opacity="0.0" prefHeight="44.0" prefWidth="94.0" text="Button" />
    </children>
 </AnchorPane>
