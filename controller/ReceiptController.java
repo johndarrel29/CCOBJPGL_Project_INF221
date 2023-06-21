@@ -1,17 +1,11 @@
 package controller;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -148,15 +142,4 @@ public class ReceiptController implements Initializable {
         + item7Amount + item8Amount + item9Amount;
         total.setText(Double.toString(final_amount));
     }
-
-    // go to logo 
-      public void logo(ActionEvent event) throws IOException {
-
-    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/HomePage.fxml"));
-    Parent root = loader.load();
-    Scene scene = new Scene(root);
-    stage.setScene(scene);
-    stage.show();
-  }
 }

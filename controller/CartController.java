@@ -35,7 +35,7 @@ public class CartController implements Initializable {
     ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9;
 
     @FXML
-    CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9 = null;
+    CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9;
     
     @FXML
     private ChoiceBox<String> choicebox1, choicebox2, choicebox3, choicebox4, choicebox5, 
@@ -273,7 +273,7 @@ public class CartController implements Initializable {
         // If product is chosen, compute item amount
        
         if (LoginController.watercolor.getProductStatus()) {
-            if (cb1.isSelected()){
+            if (LoginController.watercolor.getItemReceiptStatus()){
                 totalamount += LoginController.watercolor.getProductPrice();
             }
         }

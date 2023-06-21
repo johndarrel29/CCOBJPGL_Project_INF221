@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="-14.0" layoutY="54.0" prefHeight="597.0" prefWidth="1214.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1730.0" prefWidth="1200.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="1768.0" fitWidth="1452.0" opacity="0.51">
+                     <image>
+                        <Image url="@../images/backcart.png" />
+                     </image>
+                  </ImageView>
+                  <VBox fx:id="myvbox" layoutX="31.0" layoutY="61.0" prefHeight="1656.0" prefWidth="734.0">
+                     <children>
+                        <Pane fx:id="pane1" prefHeight="173.0" prefWidth="734.0">
+                           <children>
+                              <ImageView fx:id="img1" fitHeight="150.0" fitWidth="150.0" layoutX="102.0" layoutY="3.0">
+                                 <image>
+                                    <Image url="@../../../../../Downloads/watercolorpic%20(1).jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb1" layoutX="67.0" layoutY="6.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" prefHeight="32.0" prefWidth="30.0" />
+                              <Label fx:id="paint1" layoutX="292.0" layoutY="6.0" text="Watercolor" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price1" layoutX="294.0" layoutY="41.0" prefHeight="30.0" prefWidth="87.0" text="₱ 450.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox1" layoutX="500.0" layoutY="11.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img2" fitHeight="156.0" fitWidth="150.0" layoutX="102.0" layoutY="17.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/gouachepic%20(1).jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb2" layoutX="64.0" layoutY="17.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="paint2" layoutX="299.0" layoutY="11.0" text="Gouache" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price2" layoutX="300.0" layoutY="45.0" prefHeight="30.0" prefWidth="76.0" text="₱ 250.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox2" layoutX="501.0" layoutY="11.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img3" fitHeight="159.0" fitWidth="154.0" layoutX="100.0" layoutY="9.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/acrylicpaintpic.jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb3" layoutX="65.0" layoutY="18.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="paint3" layoutX="301.0" layoutY="3.0" text="Acrylic Paint" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price3" layoutX="302.0" layoutY="40.0" prefHeight="30.0" prefWidth="76.0" text="₱ 550.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox3" layoutX="502.0" layoutY="6.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane4" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img4" fitHeight="164.0" fitWidth="158.0" layoutX="99.0" layoutY="13.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/sketchpadpic.jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb4" layoutX="67.0" layoutY="16.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="paper1" layoutX="304.0" layoutY="9.0" text="Sketchpad" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price4" layoutX="306.0" layoutY="42.0" prefHeight="30.0" prefWidth="69.0" text="₱ 152.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox4" layoutX="506.0" layoutY="9.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane5" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img5" fitHeight="164.0" fitWidth="158.0" layoutX="98.0" layoutY="27.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/canvaspic.jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb5" layoutX="68.0" layoutY="34.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="paper2" layoutX="307.0" layoutY="22.0" text="Canvas" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price5" layoutX="309.0" layoutY="55.0" prefHeight="30.0" prefWidth="77.0" text="₱ 344.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox5" layoutX="507.0" layoutY="21.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane6" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img6" fitHeight="138.0" fitWidth="158.0" layoutX="97.0" layoutY="30.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/watercolorpaperpic.jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb6" layoutX="64.0" layoutY="38.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="paper3" layoutX="303.0" layoutY="23.0" text="Watercolor Paper " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price6" layoutX="305.0" layoutY="59.0" prefHeight="30.0" prefWidth="60.0" text="₱ 59.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox6" layoutX="509.0" layoutY="23.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane7" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img7" fitHeight="163.0" fitWidth="155.0" layoutX="96.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/angularbrushpic.jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb7" layoutX="64.0" layoutY="20.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="brush1" layoutX="303.0" layoutY="6.0" text="Angular brush" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price7" layoutX="307.0" layoutY="41.0" prefHeight="30.0" prefWidth="79.0" text="₱ 207.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox7" layoutX="509.0" layoutY="11.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane8" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img8" fitHeight="165.0" fitWidth="158.0" layoutX="95.0" layoutY="12.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/flatbrushpic.jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb8" layoutX="63.0" layoutY="20.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="brush2" layoutX="306.0" layoutY="4.0" text="Round brush" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price8" layoutX="309.0" layoutY="38.0" prefHeight="30.0" prefWidth="81.0" text="₱ 159.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox8" layoutX="507.0" layoutY="11.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane9" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="img9" fitHeight="166.0" fitWidth="160.0" layoutX="94.0" layoutY="15.0">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/sketchpadpic.jpg" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox fx:id="cb9" layoutX="64.0" layoutY="18.0" mnemonicParsing="false" onAction="#setItemReceiptStatus" />
+                              <Label fx:id="brush3" layoutX="309.0" layoutY="5.0" text="Flat brush" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="price9" layoutX="310.0" layoutY="37.0" prefHeight="30.0" prefWidth="75.0" text="₱ 120.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox9" layoutX="506.0" layoutY="9.0" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #ffc20b;" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <Pane layoutX="731.0" layoutY="50.0" prefHeight="511.0" prefWidth="418.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="513.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="422.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="513.0" layoutX="-5.0" layoutY="-2.0" stroke="#ffc20b" strokeType="INSIDE" strokeWidth="2.0" width="428.0" />
+                        <Label layoutX="97.0" layoutY="12.0" text="Your Order" textFill="#ffc20b">
+                           <font>
+                              <Font name="System Bold Italic" size="48.0" />
+                           </font>
+                        </Label>
+                        <Line endX="288.6666259765625" endY="-1.52587890625E-5" layoutX="135.0" layoutY="82.0" startX="-139.99993896484375" startY="-1.52587890625E-5" stroke="#ffc20b" />
+                        <Line endX="288.6666259765625" endY="-1.52587890625E-5" layoutX="135.0" layoutY="433.0" startX="-139.99993896484375" startY="-1.52587890625E-5" stroke="#ffc20b" />
+                        <Button fx:id="receipt" layoutX="158.0" layoutY="452.0" mnemonicParsing="false" onAction="#checkout" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #ffc20b;" text="Checkout">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="46.0" layoutY="119.0" prefHeight="40.0" prefWidth="55.0" text="Total:" textFill="#ffc20b">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="158.0" prefHeight="40.0" prefWidth="99.0" text="Sub-total:" textFill="#ffc20b">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="total" layoutX="288.0" layoutY="158.0" prefHeight="40.0" prefWidth="97.0" text="Label" textFill="#ffc20b">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc20b" height="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1200.0" />
+      <Button layoutX="52.0" layoutY="-4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffc20b;" />
+   </children>
+</AnchorPane>
