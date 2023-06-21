@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceiptController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/receipt.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="myvbox1" layoutX="422.0" layoutY="222.0" prefHeight="235.0" prefWidth="341.0">
+         <children>
+            <Pane fx:id="pane1" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product1" layoutX="5.0" layoutY="5.0" prefHeight="26.0" prefWidth="186.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty1" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount1" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane2" prefHeight="28.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product2" layoutX="5.0" layoutY="4.0" prefHeight="26.0" prefWidth="186.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty2" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount2" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane3" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product3" layoutX="5.0" layoutY="5.0" prefHeight="26.0" prefWidth="186.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty3" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount3" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane4" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product4" layoutX="5.0" layoutY="5.0" prefHeight="26.0" prefWidth="186.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty4" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount4" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane5" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product5" layoutX="5.0" layoutY="5.0" prefHeight="26.0" prefWidth="186.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty5" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount5" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane6" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product6" layoutX="5.0" layoutY="5.0" prefHeight="26.0" prefWidth="177.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty6" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount6" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane7" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product7" layoutX="5.0" layoutY="5.0" prefHeight="26.0" prefWidth="177.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty7" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount7" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane8" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product8" layoutX="6.0" layoutY="4.0" prefHeight="26.0" prefWidth="177.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty8" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount8" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="73.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane9" prefHeight="32.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="product9" layoutX="6.0" layoutY="1.0" prefHeight="26.0" prefWidth="177.0" text="Watercolor Paint">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qty9" layoutX="199.0" layoutY="4.0" prefHeight="26.0" prefWidth="35.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount9" layoutX="303.0" layoutY="4.0" prefHeight="26.0" prefWidth="54.0" text="00.0">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Label layoutX="422.0" layoutY="202.0" text="PRODUCT NAME" textFill="#ffc20b">
+         <font>
+            <Font name="Futura Medium" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="619.0" layoutY="203.0" text="QTY" textFill="#ffc20b">
+         <font>
+            <Font name="Futura Medium" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="699.0" layoutY="203.0" text="AMOUNT" textFill="#ffc20b">
+         <font>
+            <Font name="Futura Medium" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" layoutX="708.0" layoutY="479.0" prefHeight="30.0" prefWidth="62.0" text="1000">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="20.0" layoutY="27.0" mnemonicParsing="false" onAction="#logo" opacity="0.0" prefHeight="57.0" prefWidth="114.0" text="logo" />
+   </children>
+</AnchorPane>
