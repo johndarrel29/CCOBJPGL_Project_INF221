@@ -24,7 +24,7 @@ public class ContactController {
 
   public void send(ActionEvent event) throws IOException {
 
-    AlertMaker.showSuccessfulAlert("Your message have been sent!", " ");
+    AlertMaker.showSuccessfulAlert("Your message has been sent!", " ");
 
     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/HomePage.fxml"));
