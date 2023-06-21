@@ -456,10 +456,6 @@ public class CartController implements Initializable {
 
             getInitialAmount();
         }
-        System.out.println(LoginController.watercolor.getItemReceiptStatus());
-        System.out.println(LoginController.gouache.getItemReceiptStatus());
-        System.out.println(LoginController.acrylicPaint.getItemReceiptStatus());
-
     }
 
     // Go to Receipt Page
