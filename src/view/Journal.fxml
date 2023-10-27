@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="displayUsername2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JournalController">
+   <children>
+      <TextArea fx:id="journal_Input" layoutX="54.0" layoutY="69.0" prefHeight="230.0" prefWidth="222.0" />
+      <TableView fx:id="displayJournalTable" layoutX="319.0" layoutY="69.0" prefHeight="230.0" prefWidth="234.0">
+        <columns>
+          <TableColumn fx:id="userJournalList" prefWidth="185.5999755859375" text="User Journal" />
+        </columns>
+      </TableView>
+      <Button fx:id="journalButton" layoutX="91.0" layoutY="326.0" mnemonicParsing="false" onAction="#insertJournal" text="Add" />
+      <Button fx:id="delJournalButton" layoutX="174.0" layoutY="326.0" mnemonicParsing="false" onAction="#deleteJournal" text="Delete" />
+      <Label fx:id="displayUsername1" layoutX="54.0" layoutY="31.0" text="Label" />
+      <Button fx:id="UndoButton1" layoutX="122.0" layoutY="27.0" mnemonicParsing="false" onAction="#undo1" text="Undo" />
+      <Button fx:id="RedoButton1" layoutX="183.0" layoutY="27.0" mnemonicParsing="false" onAction="#redo1" text="Redo" />
+      <Button fx:id="toTask" layoutX="513.0" layoutY="27.0" mnemonicParsing="false" onAction="#ToTask" text="To task" />
+   </children>
+</AnchorPane>

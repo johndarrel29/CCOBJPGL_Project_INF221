@@ -1,0 +1,103 @@
+.loginButton {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-weight: bold;
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: #8FAFD5; 
+    -fx-font-size: 14px; 
+    -fx-pref-width: 150px; 
+    -fx-pref-height: 40px; 
+    -fx-border-radius: 5px; 
+    -fx-background-radius: 5px; 
+    -fx-cursor: hand;
+    
+}
+
+.loginButton:hover{
+    -fx-background-color: #B3DDF8; 
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}    
+
+.createAccountButton {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-weight: bold;
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: #8FAFD5; 
+    -fx-font-size: 14px; 
+    -fx-pref-width: 150px; 
+    -fx-pref-height: 40px; 
+    -fx-border-radius: 5px; 
+    -fx-background-radius: 5px; 
+    -fx-cursor: hand;
+    
+}
+
+.createAccountButton:hover{
+    -fx-background-color: #B3DDF8; 
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}    
+
+.loginUsername {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px; 
+    -fx-prompt-text-fill: #8FAFD5; 
+    -fx-font-size: 14px;
+    -fx-text-fill: #8FAFD5; 
+}
+
+.loginUsername:focused {
+    -fx-border-color: #8FAFD5;
+    -fx-border-width: 3px;
+    -fx-text-fill: #8FAFD5; 
+}
+
+.loginPassword {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px; 
+    -fx-prompt-text-fill: #8FAFD5; 
+    -fx-font-size: 14px;
+    -fx-text-fill: #8FAFD5; 
+}
+
+.loginPassword:focused {
+    -fx-border-color: #8FAFD5;
+    -fx-border-width: 3px;
+    -fx-text-fill: #8FAFD5; 
+}
+
+.InsertUsername {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px; 
+    -fx-prompt-text-fill: #8FAFD5; 
+    -fx-font-size: 14px;
+    -fx-text-fill: #8FAFD5; 
+}
+
+.InsertUsername:focused {
+    -fx-border-color: #8FAFD5;
+    -fx-border-width: 3px;
+    -fx-text-fill: #8FAFD5; 
+}
+
+.InsertPassword {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px; 
+    -fx-prompt-text-fill: #8FAFD5; 
+    -fx-font-size: 14px;
+    -fx-text-fill: #8FAFD5; 
+}
+
+.InsertPassword:focused {
+    -fx-border-color: #8FAFD5;
+    -fx-border-width: 3px;
+    -fx-text-fill: #8FAFD5; 
+}

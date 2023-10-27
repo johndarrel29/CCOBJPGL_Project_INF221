@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignInController">
+   <children>
+      <Pane fx:id="loginPane" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LogIn.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="140.0" layoutY="250.0" prefHeight="379.0" prefWidth="411.0">
+               <children>
+                  <PasswordField fx:id="loginPassword" layoutX="80.0" layoutY="169.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter password" style="-fx-font-family: Arial Rounded MT Bold; -fx-background-color: white; -fx-background-radius: 10;" styleClass="loginPassword" stylesheets="@../CSS/Styles.css" />
+                  <TextField fx:id="loginUsername" layoutX="80.0" layoutY="103.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter username" style="-fx-font-family: Arial Rounded MT Bold; -fx-background-color: white; -fx-background-radius: 10px;" styleClass="loginUsername" stylesheets="@../CSS/Styles.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font></TextField>
+                  <Button fx:id="loginButton" layoutX="131.0" layoutY="248.0" mnemonicParsing="false" onAction="#CheckLogin" prefHeight="42.0" prefWidth="73.0" style="-fx-font-family: Arial Rounded MT Bold;" styleClass="loginButton" stylesheets="@../CSS/Styles.css" text="Log In">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                     </font></Button>
+                  <Hyperlink fx:id="goToSignup" layoutX="147.0" layoutY="305.0" onAction="#switchPane" prefHeight="22.0" prefWidth="118.0" text="Don't have an account?" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Hyperlink>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="signUpPane" prefHeight="720.0" prefWidth="1280.0" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/SignUp.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="140.0" layoutY="251.0" prefHeight="379.0" prefWidth="411.0">
+               <children>
+                  <PasswordField fx:id="InsertPassword" layoutX="80.0" layoutY="169.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter password" style="-fx-font-family: Arial Rounded MT Bold; -fx-background-color: white; -fx-background-radius: 10;" styleClass="InsertPassword" stylesheets="@../CSS/Styles.css" />
+                  <TextField fx:id="InsertUsername" layoutX="80.0" layoutY="103.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter username" style="-fx-font-family: Arial Rounded MT Bold; -fx-background-color: white; -fx-background-radius: 10;" styleClass="InsertUsername" stylesheets="@../CSS/Styles.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font></TextField>
+                  <Button fx:id="createAccountButton" layoutX="131.0" layoutY="248.0" mnemonicParsing="false" onAction="#signup" prefHeight="40.0" prefWidth="150.0" style="-fx-font-family: Arial Rounded MT Bold;" styleClass="createAccountButton" stylesheets="@../CSS/Styles.css" text="Create Account" />
+                  <Hyperlink fx:id="goToLogin" layoutX="147.0" layoutY="305.0" onAction="#switchPane" prefHeight="22.0" prefWidth="150.0" text="Already have an account?">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Hyperlink>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
